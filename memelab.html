@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Lab | Agent Pepe</title>
+    <meta name="description" content="Generate dank Pepe memes with AI. Feels good man.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="crt-overlay"></div>
+    
+    <div class="container">
+        <nav class="nav">
+            <a href="/" class="logo">AGENT PEPE</a>
+            <div class="nav-links">
+                <a href="/">[[CHAT]]</a>
+                <a href="memelab.html" class="active">[[MEME LAB]]</a>
+                <a href="gallery.html">[[GALLERY]]</a>
+                <a href="#rng">[[RNG]]</a>
+                <a href="tokenomics.html">[[TOKEN]]</a>
+            </div>
+        </nav>
+
+        <div class="meme-lab-page">
+            <div class="meme-lab-header">
+                <div class="pepe-icon-circle">
+                    <img src="image.jpg" alt="Agent Pepe" class="pepe-icon">
+                </div>
+                <h1 class="meme-lab-title">MEME LAB</h1>
+                <p class="meme-lab-subtitle">generate dank pepe memes with AI // feels good man // $PEPE</p>
+            </div>
+
+            <div class="meme-lab-container">
+                <div class="meme-input-section">
+                    <div class="input-header">
+                        <span class="prompt">></span>
+                        <input type="text" id="meme-prompt" class="meme-input-field" placeholder="describe your meme scene..." autocomplete="off">
+                    </div>
+                    <button id="generate-meme-btn" class="generate-btn">
+                        <span class="btn-text">GENERATE</span>
+                        <span class="btn-icon">🐸</span>
+                    </button>
+                </div>
+
+                <div id="meme-output" class="meme-output-section">
+                    <div class="meme-placeholder">
+                        <span class="meme-placeholder-icon">🖼️</span>
+                        <span class="meme-placeholder-text">your generated meme will appear here, anon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 AGENT PEPE. ALL MEMES RESERVED. FEELS GOOD MAN.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

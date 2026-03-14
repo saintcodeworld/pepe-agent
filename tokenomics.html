@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenomics | Agent Pepe</title>
+    <meta name="description" content="Agent Pepe tokenomics and real-time stats. Feels good man.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="crt-overlay"></div>
+    
+    <div class="container">
+        <nav class="nav">
+            <a href="/" class="logo">AGENT PEPE</a>
+            <div class="nav-links">
+                <a href="/">[[CHAT]]</a>
+                <a href="#meme">[[MEME LAB]]</a>
+                <a href="#gallery">[[GALLERY]]</a>
+                <a href="#rng">[[RNG]]</a>
+                <a href="tokenomics.html" class="active">[[TOKEN]]</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="pepe-container">
+                <img src="image.jpg" alt="Agent Pepe" class="pepe-image">
+            </div>
+            <h1 class="glitch" data-text="$PEPE TOKENOMICS">$PEPE TOKENOMICS</h1>
+            <p class="tagline">maximum comfy investment // wagmi fren</p>
+        </div>
+
+        <div class="live-stats-section">
+            <div class="terminal-header">
+                <span class="terminal-title">// LIVE STATISTICS</span>
+                <span class="terminal-subtitle">real-time data from pump.fun. stay based.</span>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <h3 class="stat-label">PRICE</h3>
+                    <p class="stat-value" id="price-value">Loading...</p>
+                    <p class="stat-change" id="price-change">--</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <h3 class="stat-label">MARKET CAP</h3>
+                    <p class="stat-value" id="mcap-value">Loading...</p>
+                    <p class="stat-detail">fully diluted</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">💧</div>
+                    <h3 class="stat-label">LIQUIDITY</h3>
+                    <p class="stat-value" id="liquidity-value">Loading...</p>
+                    <p class="stat-detail">locked & burned</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <h3 class="stat-label">24H VOLUME</h3>
+                    <p class="stat-value" id="volume-value">Loading...</p>
+                    <p class="stat-detail">trading activity</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <h3 class="stat-label">HOLDERS</h3>
+                    <p class="stat-value" id="holders-value">Loading...</p>
+                    <p class="stat-detail">comfy frens</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <h3 class="stat-label">TOTAL SUPPLY</h3>
+                    <p class="stat-value" id="supply-value">1B</p>
+                    <p class="stat-detail">fixed forever</p>
+                </div>
+            </div>
+
+            <div class="contract-info">
+                <div class="contract-header">
+                    <span class="terminal-title">// CONTRACT ADDRESS</span>
+                </div>
+                <div class="contract-box">
+                    <input type="text" id="contract-address" class="contract-input" readonly>
+                    <button id="copy-contract" class="copy-btn">COPY</button>
+                </div>
+                <p class="contract-note">verified on pump.fun. always dyor fren.</p>
+            </div>
+        </div>
+
+        <div class="tokenomics-section">
+            <div class="terminal-header">
+                <span class="terminal-title">// TOKENOMICS</span>
+                <span class="terminal-subtitle">the comfy fundamentals. based distribution.</span>
+            </div>
+            
+            <div class="tokenomics-grid">
+                <div class="token-card">
+                    <div class="token-icon">💰</div>
+                    <h3 class="token-title">TOTAL SUPPLY</h3>
+                    <p class="token-value">1,000,000,000</p>
+                    <p class="token-detail">one billion comfy tokens</p>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon">🔥</div>
+                    <h3 class="token-title">LIQUIDITY</h3>
+                    <p class="token-value">BURNED</p>
+                    <p class="token-detail">locked forever. feels safe man.</p>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon">🐸</div>
+                    <h3 class="token-title">TAX</h3>
+                    <p class="token-value">0%</p>
+                    <p class="token-detail">no tax, pure vibes. based.</p>
+                </div>
+
+                <div class="token-card">
+                    <div class="token-icon">⚡</div>
+                    <h3 class="token-title">CONTRACT</h3>
+                    <p class="token-value">RENOUNCED</p>
+                    <p class="token-detail">community owned. true degen style.</p>
+                </div>
+            </div>
+
+            <div class="token-distribution">
+                <h3 class="distribution-title">// TOKEN DISTRIBUTION</h3>
+                <div class="distribution-bars">
+                    <div class="distribution-item">
+                        <div class="distribution-label">
+                            <span>LIQUIDITY POOL</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="distribution-item">
+                        <div class="distribution-label">
+                            <span>MARKETING & CEX</span>
+                            <span class="percentage">5%</span>
+                        </div>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 5%"></div>
+                        </div>
+                    </div>
+
+                    <div class="distribution-item">
+                        <div class="distribution-label">
+                            <span>TEAM & DEVELOPMENT</span>
+                            <span class="percentage">5%</span>
+                        </div>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 5%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="token-cta">
+                <a href="#" id="buy-link" class="buy-button">
+                    <span class="button-text">BUY $PEPE</span>
+                    <span class="button-subtext">feels good to invest</span>
+                </a>
+                <div class="token-links">
+                    <a href="#" id="chart-link" class="token-link">[[CHART]]</a>
+                    <a href="#" id="dextools-link" class="token-link">[[DEXTOOLS]]</a>
+                    <a href="#" class="token-link">[[TWITTER]]</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 AGENT PEPE. ALL MEMES RESERVED. FEELS GOOD MAN.</p>
+        </footer>
+    </div>
+
+    <script src="tokenomics.js"></script>
+</body>
+</html>
