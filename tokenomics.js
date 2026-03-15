@@ -9,7 +9,7 @@ async function initTokenomics() {
         contractAddress = contract;
         localStorage.setItem('pepe_contract', contract);
     } else {
-        contractAddress = localStorage.getItem('pepe_contract') || '3GnyTs3bj66aze6YJfUdyy2W2c5TD3jG6zEUbx6Mpump';
+        contractAddress = localStorage.getItem('pepe_contract') || 'J86fDdAaEPqLFyXg7RyxnWZuj9rskTrGisnXY5wppump';
     }
     
     if (contractAddress) {
